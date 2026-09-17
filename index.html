@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Hamza Store - considered luxury for every day.">
-	<title>Hamza Store | Considered Luxury</title>
+	<meta name="description" content="A considered collection for every day.">
+	<title>Your Store | Considered Collection</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-	<div class="announcement">Complimentary delivery on orders over $150 <span>✦</span> Shop the new season</div>
+	<div class="announcement">Complimentary delivery on orders over Rs. 15,000 <span>✦</span> Discover the latest edit</div>
 	<header class="site-header">
 		<button class="menu-toggle" aria-label="Open menu"><span></span><span></span></button>
-		<a class="brand" href="#top" aria-label="Hamza Store home">HAMZA <em>STORE</em></a>
+		<a class="brand" href="#top" aria-label="Your Store home">YOUR <em>STORE</em></a>
 		<nav class="main-nav" aria-label="Main navigation">
 			<a href="#new-arrivals">New arrivals</a>
 			<a href="#collection">Collections</a>
@@ -24,14 +25,14 @@
 		<div class="header-actions">
 			<button class="icon-button search-button" aria-label="Search"><span class="search-icon"></span></button>
 			<button class="icon-button" aria-label="Account"><span class="user-icon"></span></button>
-			<button class="bag-button" aria-label="Shopping bag">Bag <span id="bag-count">0</span></button>
+			<button class="bag-button" id="open-cart" aria-label="Shopping bag">Bag <span id="bag-count">0</span></button>
 		</div>
 	</header>
 
 	<main id="top">
 		<section class="hero">
 			<div class="hero-content">
-				<p class="eyebrow">The autumn edit / 2024</p>
+				<p class="eyebrow">The latest edit / 2026</p>
 				<h1>Quiet luxury,<br><i>made personal.</i></h1>
 				<p class="hero-copy">Thoughtful pieces for the life you are building. Discover our considered collection of enduring essentials.</p>
 				<a class="button button-light" href="#new-arrivals">Explore collection <span>↗</span></a>
@@ -52,10 +53,10 @@
 			<div class="section-heading"><div><p class="eyebrow">Just in</p><h2>New <i>arrivals</i></h2></div><a class="text-link" href="#new-arrivals">View all <span>↗</span></a></div>
 			<div class="filter-row"><button class="filter active" data-filter="all">All pieces</button><button class="filter" data-filter="Womenswear">Womenswear</button><button class="filter" data-filter="Menswear">Menswear</button><button class="filter" data-filter="Accessories">Accessories</button></div>
 			<div class="product-grid">
-				<article class="product-card" data-category="Womenswear"><div class="product-image"><span class="tag">New</span><button class="heart" aria-label="Add The Isla coat to wishlist">♡</button><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="The Isla coat"></div><div class="product-info"><div><h3>The Isla coat</h3><p>Wool &amp; cashmere</p></div><strong>$480</strong></div></article>
-				<article class="product-card" data-category="Accessories"><div class="product-image"><span class="tag">Bestseller</span><button class="heart" aria-label="Add Miro leather bag to wishlist">♡</button><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85" alt="Miro leather bag"></div><div class="product-info"><div><h3>Miro leather bag</h3><p>Italian calfskin</p></div><strong>$295</strong></div></article>
-				<article class="product-card" data-category="Menswear"><div class="product-image"><button class="heart" aria-label="Add The Form overshirt to wishlist">♡</button><img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=900&q=85" alt="The Form overshirt"></div><div class="product-info"><div><h3>The Form overshirt</h3><p>Brushed cotton</p></div><strong>$220</strong></div></article>
-				<article class="product-card" data-category="Accessories"><div class="product-image"><button class="heart" aria-label="Add No. 04 fragrance to wishlist">♡</button><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85" alt="No. 04 fragrance bottle"></div><div class="product-info"><div><h3>No. 04 / Santal</h3><p>Eau de parfum, 50ml</p></div><strong>$140</strong></div></article>
+				<article class="product-card" data-id="isla-coat" data-category="Womenswear" data-name="The Isla coat" data-price="48000" data-description="A relaxed wool and cashmere layer designed for everyday elegance." data-image="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85"><div class="product-image"><span class="tag">New</span><button class="heart" aria-label="Save The Isla coat">♡</button><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85" alt="The Isla coat"></div><div class="product-info"><div><h3>The Isla coat</h3><p>Wool &amp; cashmere</p></div><strong>Rs. 48,000</strong></div><button class="add-to-cart" data-product="isla-coat">Add to bag</button></article>
+				<article class="product-card" data-id="miro-bag" data-category="Accessories" data-name="Miro leather bag" data-price="29500" data-description="A structured Italian calfskin bag with an easy everyday silhouette." data-image="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"><div class="product-image"><span class="tag">Bestseller</span><button class="heart" aria-label="Save Miro leather bag">♡</button><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85" alt="Miro leather bag"></div><div class="product-info"><div><h3>Miro leather bag</h3><p>Italian calfskin</p></div><strong>Rs. 29,500</strong></div><button class="add-to-cart" data-product="miro-bag">Add to bag</button></article>
+				<article class="product-card" data-id="form-overshirt" data-category="Menswear" data-name="The Form overshirt" data-price="22000" data-description="A brushed cotton overshirt that works across seasons and occasions." data-image="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=900&q=85"><div class="product-image"><button class="heart" aria-label="Save The Form overshirt">♡</button><img src="https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=900&q=85" alt="The Form overshirt"></div><div class="product-info"><div><h3>The Form overshirt</h3><p>Brushed cotton</p></div><strong>Rs. 22,000</strong></div><button class="add-to-cart" data-product="form-overshirt">Add to bag</button></article>
+				<article class="product-card" data-id="santal-fragrance" data-category="Accessories" data-name="No. 04 / Santal" data-price="14000" data-description="A warm, quietly woody eau de parfum made for daily rituals." data-image="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85"><div class="product-image"><button class="heart" aria-label="Save No. 04 fragrance">♡</button><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85" alt="No. 04 fragrance bottle"></div><div class="product-info"><div><h3>No. 04 / Santal</h3><p>Eau de parfum, 50ml</p></div><strong>Rs. 14,000</strong></div><button class="add-to-cart" data-product="santal-fragrance">Add to bag</button></article>
 			</div>
 		</section>
 
@@ -66,11 +67,28 @@
 
 		<section class="service-band" id="journal"><div><span class="service-icon">✦</span><h3>Personal styling</h3><p>A considered edit, made just for you.</p></div><div><span class="service-icon">◌</span><h3>Conscious choices</h3><p>Beautiful things, made responsibly.</p></div><div><span class="service-icon">↗</span><h3>Worldwide delivery</h3><p>Wherever you are, we will meet you there.</p></div></section>
 
-		<section class="newsletter"><div><p class="eyebrow">A note from Hamza</p><h2>Stay in the <i>know.</i></h2><p>New arrivals, considered stories, and a little inspiration. Straight to your inbox.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Your email address</label><input type="email" id="email" placeholder="Your email address" required><button type="submit">Subscribe <span>↗</span></button><small id="form-message"></small></form></section>
+		<section class="newsletter"><div><p class="eyebrow">A note from your store</p><h2>Stay in the <i>know.</i></h2><p>New arrivals, considered stories, and a little inspiration. Straight to your inbox.</p></div><form id="newsletter-form"><label class="sr-only" for="email">Your email address</label><input type="email" id="email" placeholder="Your email address" required><button type="submit">Subscribe <span>↗</span></button><small id="form-message"></small></form></section>
 	</main>
 
-	<footer class="site-footer"><a class="brand" href="https://www.instagram.com/ch_sami1596/">HAMZA <em>STORE</em></a><p>Considered luxury for every day.</p><div class="footer-links"><a href="#collection">About</a><a href="#journal">Contact</a><a href="https://www.instagram.com/ch_sami1596/">Instagram</a><a href="#https://www.instagram.com/ch_sami1596/">Shipping</a></div><small>© 2024 Hamza Store. All rights reserved.</small></footer>
+	<footer class="site-footer"><a class="brand" href="#top">YOUR <em>STORE</em></a><p>Considered essentials for every day.</p><div class="footer-links"><a href="#collection">About</a><a href="#journal">Contact</a><a href="#journal">Instagram</a><a href="#journal">Shipping</a></div><small>© 2026 Your Store. All rights reserved.</small></footer>
 	<div class="toast" id="toast" role="status">Added to your bag <span>✓</span></div>
+	<div class="modal-backdrop" id="modal-backdrop" hidden></div>
+	<aside class="store-panel" id="product-panel" aria-hidden="true">
+		<button class="panel-close" data-close-panel aria-label="Close product details">×</button>
+		<div id="product-detail"></div>
+	</aside>
+	<aside class="store-panel cart-panel" id="cart-panel" aria-hidden="true">
+		<button class="panel-close" data-close-panel aria-label="Close shopping bag">×</button>
+		<div class="panel-heading"><p class="eyebrow">Your selection</p><h2>Your <i>bag.</i></h2></div>
+		<div id="cart-items"></div>
+		<div class="cart-summary"><span>Subtotal</span><strong id="cart-total">Rs. 0</strong></div>
+		<button class="button button-dark checkout-button" id="open-checkout">Continue to checkout <span>↗</span></button>
+	</aside>
+	<aside class="store-panel checkout-panel" id="checkout-panel" aria-hidden="true">
+		<button class="panel-close" data-close-panel aria-label="Close checkout">×</button>
+		<div class="panel-heading"><p class="eyebrow">Almost yours</p><h2>Secure your <i>order.</i></h2></div>
+		<form class="checkout-form" id="checkout-form"><label for="customer-name">Full name</label><input id="customer-name" required placeholder="Your full name"><label for="customer-phone">Phone number</label><input id="customer-phone" type="tel" required placeholder="03XX XXXXXXX"><label for="customer-address">Delivery address</label><textarea id="customer-address" required placeholder="House, street, city"></textarea><button class="button button-dark" type="submit">Place order <span>↗</span></button></form>
+	</aside>
 	<script src="script.js"></script>
 </body>
 </html>
